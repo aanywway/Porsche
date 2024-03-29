@@ -1,0 +1,181 @@
+/* устанавливаем свойства для всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+/* устанавливаем свойства для секции history */
+#history, .slides {
+    background-image: url(/images/BackgroundHistory.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+}
+/* устанавливаем свойства для main */
+.history_main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow-x: hidden;
+}
+/* устанавливаем свойства для heading */
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* устанавливаем свойства для h1, который находится в heading */
+.heading h1 {
+    color: #fff;
+    font-size: 122px;
+}
+/* устанавливаем свойства для slides */
+.slides {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    padding: 100px 100px;
+}
+/* устанавливаем свойства для slide_description */
+.slide_description {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    min-width: 800px;
+}
+/* устанавливаем свойства для h3, который находится в description_text*/
+.description_text h3 {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+/* устанавливаем свойства для изображений, который находится в description_image*/
+.description_image img {
+    width: 400px;
+    height: 300px;
+}
+/* делаем адаптив */
+@media screen and (max-width: 1835px) {
+    .heading h1 {
+        font-size: 102px;
+    }
+}
+@media screen and (max-width: 1750px) {
+    .description_text h3 {
+        font-size: 17px;
+    }
+    .description_image img {
+        width: 350px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .slides {
+        padding: 85px 85px;
+    }
+}
+@media screen and (max-width: 1565px) {
+    .heading h1 {
+        font-size: 80px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .description_text h3 {
+        font-size: 15px;
+    }
+    .description_image img {
+        width: 300px;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 1270px) {
+    .heading h1 {
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .heading h1 {
+        font-size: 60px;
+    }
+    .slide_description {
+        display: block;
+    }
+    .description_image img {
+        display: none;
+    }
+}
+@media screen and (max-width: 1005px) {
+    .heading h1 {
+        font-size: 50px;
+    }
+    .slides {
+        padding: 60px 60px;
+    }
+}
+@media screen and (max-width: 940px) {
+    .description_text h3 {
+        font-size: 13.5px;
+    }
+}
+@media screen and (max-width: 870px) {
+    .heading h1 {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .slides {
+        padding: 60px 30px;
+    }
+    .slide_description {
+        min-width: 0px;
+        width: 750px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .slide_description {
+        width: 650px;
+    }
+}
+@media screen and (max-width: 735px) {
+    .heading h1 {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 680px){
+    .slide_description {
+        width: 550px;
+    }
+    
+}
+@media screen and (max-width: 605px) {
+    .heading h1 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 585px) {
+    .slide_description {
+        width: 500px;
+    }
+}
+@media screen and (max-width: 535px) {
+    .slides {
+        background-image: none;
+    }
+    .slide_description {
+        width: 400px;
+    }
+    .description_text h3 {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .description_text h3 {
+        font-size: 11px;
+    }
+    .slide_description {
+        width: 300px;
+    }
+}

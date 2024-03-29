@@ -1,0 +1,270 @@
+/* устанавливаем свойства для всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* устанавливаем свойства для секции about */
+#about {
+    width: 100vw;
+    height: 100vh;
+}
+/* устанавливаем свойства для about_main */
+.about_main {
+    width: 100vw;
+    height: 100vh;
+}
+/* устанавливаем свойства для about_car*/
+.about_car {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/PORSCHE.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+/* устанавливаем свойства для car_description */
+.car_description {
+    width: 800px;
+    margin: 0px 0px 300px 100px;
+}
+/* устанавливаем свойства для h1, который находится в car_description */
+.car_description h1 {
+    color: #fff;
+    font-size: 50px;
+}
+/* устанавливаем свойства для h2, который находится в car_description */
+.car_description h2 {
+    color: #fff;    
+    font-size: 20px;
+    font-weight: normal;
+}
+/* устанавливаем свойства для about_speed */
+.about_speed {
+    width: 100vw;
+    height: 300px;
+    background-color: black;
+    display: flex;
+}
+/* устанавливаем свойства для item, которые находятся в about_speed */
+.speed_firstItem, .speed_secondItem, .speed_thirdItem {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+/* устанавливаем свойства для первого и второго item, которые находятся в about_speed */
+.speed_firstItem, .speed_secondItem{
+    border-right: 1px solid white;
+}
+/* устанавливаем свойства для h3, которые находятся в item */
+.speed_firstItem h3, .speed_secondItem h3, .speed_thirdItem h3 {
+    color: #98ABEE;
+    font-size: 80px;
+    -webkit-text-stroke: 0.4px darkslateblue;
+}
+/* устанавливаем свойства для h4, которые находятся в item */
+.speed_firstItem h4, .speed_secondItem h4, .speed_thirdItem h4 {
+    color: #81689D;
+    font-size: 30px;
+}
+/* устанавливаем свойства для about_engine и about_indoor */
+.about_engine, .about_indoor {
+    width: 100vw;
+    height: 950px;
+}
+/* устанавливаем свойства для engine_image и indoor_image */
+.engine_image, .indoor_image {
+    width: 100vw;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* устанавливаем свойства для engine_image */
+.engine_image {
+    background-image: url(/images/PorscheEngine.jpg);
+}
+/* устанавливаем свойства для indoor_image */
+.indoor_image {
+    background-image: url(/images/PorscheIndoor.jpg);
+}
+/* устанавливаем свойства для engine_description и indoor_description */
+.engine_description, .indoor_description {
+    width: 100vw;
+    height: 350px;
+    background-color: black;
+    display: flex;
+}
+/* устанавливаем свойства для div, которые находятся в engine_description и indoor_description */
+.engine_description div, .indoor_description div {
+    border-right: 1px solid white;
+    width: 33.3%;
+    display: flex;
+}
+/* устанавливаем свойства для img, которые находятся в item */
+.engine_description_firstItem img, .engine_description_secondItem img, .engine_description_thirdItem img, .indoor_description_firstItem img, .indoor_description_secondItem img, .indoor_description_thirdItem img {
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin: 10px 10px;
+}
+/* устанавливаем свойства для h3, которые находятся в item */
+.engine_description_firstItem h3, .engine_description_secondItem h3, .engine_description_thirdItem h3, .indoor_description_firstItem h3, .indoor_description_secondItem h3, .indoor_description_thirdItem h3 {
+    color: #98ABEE;
+    font-size: 23px;
+    margin: 15px 15px;
+    -webkit-text-stroke: 0.4px darkslateblue;
+}
+/* делаем адаптив */
+@media screen and (max-width: 1910px) {
+    .engine_description_firstItem h3, .engine_description_secondItem h3, .engine_description_thirdItem h3, .indoor_description_firstItem h3, .indoor_description_secondItem h3, .indoor_description_thirdItem h3 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1600px) {
+    .engine_description_firstItem h3, .engine_description_secondItem h3, .engine_description_thirdItem h3, .indoor_description_firstItem h3, .indoor_description_secondItem h3, .indoor_description_thirdItem h3 {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .speed_firstItem h3, .speed_secondItem h3, .speed_thirdItem h3 {
+        font-size: 65px;
+    }
+    .speed_firstItem h4, .speed_secondItem h4, .speed_thirdItem h4 {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .engine_description_firstItem h3, .engine_description_secondItem h3, .engine_description_thirdItem h3, .indoor_description_firstItem h3, .indoor_description_secondItem h3, .indoor_description_thirdItem h3 {
+        font-size: 15px;
+    }
+    .engine_description_firstItem img, .engine_description_secondItem img, .engine_description_thirdItem img, .indoor_description_firstItem img, .indoor_description_secondItem img, .indoor_description_thirdItem img {
+        width: 50px;
+        height: 50px;
+        margin: 7px 7px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .car_description h1 {
+        font-size: 40px;
+    }
+    .car_description h2 {
+        font-size: 16px;
+    }
+    .speed_firstItem h3, .speed_secondItem h3, .speed_thirdItem h3 {
+        font-size: 50px;
+    }
+    .speed_firstItem h4, .speed_secondItem h4, .speed_thirdItem h4 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .car_description {
+        margin: 0px 0px 300px 50px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .engine_description_firstItem h3, .engine_description_secondItem h3, .engine_description_thirdItem h3, .indoor_description_firstItem h3, .indoor_description_secondItem h3, .indoor_description_thirdItem h3 {
+        font-size: 13px;
+    }
+    .engine_description_firstItem img, .engine_description_secondItem img, .engine_description_thirdItem img, .indoor_description_firstItem img, .indoor_description_secondItem img, .indoor_description_thirdItem img {
+        width: 40px;
+        height: 40px;
+        margin: 5px 5px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .car_description {
+        margin: 0px 50px 300px 50px;
+    }
+    .about_speed {
+        height: 250px;
+    }
+    .speed_firstItem h3, .speed_secondItem h3, .speed_thirdItem h3 {
+        font-size: 45px;
+    }
+    .speed_firstItem h4, .speed_secondItem h4, .speed_thirdItem h4 {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 715px) {
+    .car_description h1 {
+        font-size: 35px;
+    }
+    .about_speed {
+        height: 200px;
+    }
+    .speed_firstItem h3, .speed_secondItem h3, .speed_thirdItem h3 {
+        font-size: 40px;
+    }
+    .speed_firstItem h4, .speed_secondItem h4, .speed_thirdItem h4 {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .engine_description_firstItem h3, .engine_description_secondItem h3, .engine_description_thirdItem h3, .indoor_description_firstItem h3, .indoor_description_secondItem h3, .indoor_description_thirdItem h3 {
+        font-size: 11px;
+    }
+    .engine_description_firstItem img, .engine_description_secondItem img, .engine_description_thirdItem img, .indoor_description_firstItem img, .indoor_description_secondItem img, .indoor_description_thirdItem img {
+        margin: 3px 3px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .car_description h1 {
+        font-size: 30px;
+    }
+    .car_description h2 {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .car_description h1 {
+        font-size: 30px;
+    }
+    .car_description h2 {
+        font-size: 13px;
+    }
+    .about_speed {
+        height: 175px;
+    }
+    .speed_firstItem h3, .speed_secondItem h3, .speed_thirdItem h3 {
+        font-size: 32.5px;
+    }
+    .speed_firstItem h4, .speed_secondItem h4, .speed_thirdItem h4 {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .engine_description_firstItem h3, .engine_description_secondItem h3, .engine_description_thirdItem h3, .indoor_description_firstItem h3, .indoor_description_secondItem h3, .indoor_description_thirdItem h3 {
+        font-size: 9.5px;
+    }
+    .engine_description_firstItem img, .engine_description_secondItem img, .engine_description_thirdItem img, .indoor_description_firstItem img, .indoor_description_secondItem img, .indoor_description_thirdItem img {
+        margin: 2px 2px;
+    }
+}
+@media screen and (max-width: 515px) {
+    .speed_firstItem h4, .speed_secondItem h4, .speed_thirdItem h4 {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 515px) {
+    .speed_firstItem h3, .speed_secondItem h3, .speed_thirdItem h3 {
+        font-size: 27px;
+    }
+    .speed_firstItem h4, .speed_secondItem h4, .speed_thirdItem h4 {
+        font-size: 9px;
+    }
+}
+@media screen and (max-width: 435px) {
+    .engine_description_firstItem h3, .engine_description_secondItem h3, .engine_description_thirdItem h3, .indoor_description_firstItem h3, .indoor_description_secondItem h3, .indoor_description_thirdItem h3 {
+        font-size: 8px;
+    }
+    .engine_description_firstItem img, .engine_description_secondItem img, .engine_description_thirdItem img, .indoor_description_firstItem img, .indoor_description_secondItem img, .indoor_description_thirdItem img {
+        width: 30px;
+        height: 30px;
+    }
+}

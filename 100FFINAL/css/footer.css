@@ -1,0 +1,44 @@
+/* устанавливаем свойства для всех элементов */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* устанавливаем свойства для секции contacts */
+#contacts {
+    width: 100vw;
+    height: 90px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0px;
+}
+/* устанавливаем свойства для contacts_main */
+.contacts_main {
+    width: 800px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* устанавливаем свойства для img, которые находятся в contacts_main */
+.contacts_main img {
+    width: 50px;
+    height: 50px;
+}
+/* делаем адаптив */
+@media screen and (max-width: 700px) {
+    .contacts_main img {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 435px) {
+    .contacts_main img {
+        width: 30px;
+        height: 30px;
+    }
+}
+

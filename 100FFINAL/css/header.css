@@ -1,0 +1,197 @@
+/* устанавливаем свойства для всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+/* устанавливаем свойства для body */
+body {
+    overflow-x: hidden;
+}
+/* устанавливаем свойства для секции home */
+#home {
+    background-image: url(/images/BackgroundHome.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: black;
+}
+/* устанавливаем свойства для main */
+.home_main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+/* устанавливаем свойства для title */
+.main_title {
+    width: 850px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    margin-top: 135px;
+}
+/* устанавливаем свойства для h1, который находится в title */
+.main_title h1 {
+    color: #fff;
+    font-size: 122px;
+}
+/* устанавливаем свойства для h2, который находится в title */
+.main_title h2 {
+    color: #fff;
+    font-size: 30px;
+}
+/* устанавливаем свойства для opinions */
+.main_opinions {
+    width: 100vw;
+    height: 380px;
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+/* устанавливаем свойства для мнений, которые находятся в opinions */
+.firstOpinion, .secondOpinion {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 70px 0px 70px;
+    gap: 20px;
+    width: 50%;
+}
+.firstOpinion {
+    border-right: 1px solid white;
+}
+/* устанавливаем свойства для самих рецензий */
+.firstOpinion_text, .secondOpinion_text {
+    color: #98ABEE;
+    font-size: 24px;
+    -webkit-text-stroke: 0.4px darkslateblue
+}
+/* устанавливаем свойства для авторов */
+.firstOpinion_author, .secondOpinion_author {
+    color: #81689D;
+    font-size: 24px;
+}
+/* делаем адаптив */
+@media screen and (max-width: 1700px) {
+    .firstOpinion, .secondOpinion {
+        padding: 80px 50px 0px 50px;
+    }
+}
+@media screen and (max-width: 1600px) {
+    .firstOpinion, .secondOpinion {
+        padding: 70px 40px 0px 40px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .firstOpinion, .secondOpinion {
+        padding: 60px 30px 0px 30px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .firstOpinion, .secondOpinion {
+        padding: 50px 20px 0px 20px;
+    }
+}
+@media screen and (max-width: 1160px) {
+    .firstOpinion, .secondOpinion {
+        padding: 40px 20px 0px 20px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .main_title {
+        width: 600px;
+    }
+    .main_title h1 {
+        font-size: 90px;
+    }
+    .main_title h2 {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 985px) {
+    .firstOpinion, .secondOpinion {
+        padding: 30px 20px 0px 20px;
+    }
+    .firstOpinion_text, .secondOpinion_text {
+        font-size: 22px;
+    }
+    .firstOpinion_author, .secondOpinion_author {
+        font-size: 22px;
+    }
+    .main_title {
+        width: 550px;
+    }
+    .main_title h1 {
+        font-size: 80px;
+    }
+    .main_title h2 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 895px) {
+    .main_title h1 {
+        font-size: 65px;
+    }
+    .firstOpinion_text, .secondOpinion_text {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .main_title h2 {
+        font-size: 17px;
+    }
+    .firstOpinion_text, .secondOpinion_text {
+        font-size: 19px;
+    }
+    .firstOpinion_author, .secondOpinion_author {
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 670px) {
+    .firstOpinion, .secondOpinion {
+        padding: 10px 5px 0px 5px;
+    }
+}
+@media screen and (max-width: 595px) {
+    .main_title {
+        width: 450px;
+    }
+    .main_title h1 {
+        font-size: 55px;
+    }
+    .firstOpinion, .secondOpinion {
+        padding: 20px 10px 0px 10px;
+    }
+    .firstOpinion_text, .secondOpinion_text {
+        font-size: 17px;
+    }
+    .firstOpinion_author, .secondOpinion_author {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 490px) {
+    .main_title {
+        width: 350px;
+    }
+    .main_title h1 {
+        font-size: 45px;
+    }
+    .main_title h2 {
+        font-size: 16px;
+    }
+    .firstOpinion, .secondOpinion {
+        padding: 10px 5px 0px 5px;
+    }
+    .firstOpinion_text, .secondOpinion_text {
+        font-size: 14px;
+    }
+    .firstOpinion_author, .secondOpinion_author {
+        font-size: 14px;
+    }
+}
